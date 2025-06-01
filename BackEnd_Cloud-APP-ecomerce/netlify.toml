@@ -1,0 +1,41 @@
+############################################
+# 1) Build / Functions
+############################################
+[build]
+  # Dossier généré par `npm run build` (create-react-app)
+  publish   = "public"
+  # Racine des fonctions Netlify (users, product…)
+  functions = "netlify/functions"
+
+############################################
+# 2) API rewrites  (ordre **avant** le fallback)
+############################################
+
+# Produits  ────────────────────────────────
+[[redirects]]
+  from   = "/product/*"
+  to     = "/.netlify/functions/api/product/:splat"
+  status = 200
+
+# Utilisateurs / Auth  ─────────────────────
+[[redirects]]
+  from   = "/users/*"
+  to     = "/.netlify/functions/api/users/:splat"
+  status = 200
+
+############################################
+# 3) Fichiers statiques d’images produits
+############################################
+[[redirects]]
+  from   = "/public/productImages/*"
+  to     = "/productImages/:splat"
+  status = 200
+
+############################################
+# 4) Fallback SPA  (React Router)
+#    Toujours en dernier !
+############################################
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
