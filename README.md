@@ -1,7 +1,5 @@
 # ☁️ Projet d'application cloud – S2-Boutique ☁️
 
-S2-Boutique est une plateforme e-commerce cloud-native, moderne et évolutive, permettant la gestion complète des produits, utilisateurs et commandes, avec une architecture MERN et un déploiement optimisé pour le cloud.
-
 Dans le cadre de ce projet, nous avons conçu et réalisé une application cloud autour de la thématique **E-commerce**.  
 L'objectif est de proposer une solution concrète à la problématique suivante :  
 **Comment offrir une plateforme e-commerce moderne, scalable et accessible, permettant la gestion complète des produits, des utilisateurs et des commandes, tout en exploitant les avantages de l'architecture Cloud ?**
